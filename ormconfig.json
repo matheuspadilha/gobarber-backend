@@ -9,14 +9,12 @@
     "./src/shared/infra/typeorm/migrations/migrations/*.ts"
   ],
   "entities": [
-    "./src/modules/appointments/infra/typeorm/entities/*.ts",
-    "./src/modules/users/infra/typeorm/entities/*.ts"
+    "./src/modules/**/infra/typeorm/entities/*.ts"
   ],
   "cli": {
     "migrationsDir": "./src/shared/infra/typeorm/migrations",
     "entitiesDir": [
-      "./src/modules/appointments/infra/typeorm/entities",
-      "./src/modules/users/infra/typeorm/entities"
+      "./src/modules/**/infra/typeorm/entities"
     ]
   }
 }
