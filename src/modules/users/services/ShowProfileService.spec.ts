@@ -13,7 +13,7 @@ describe('UpdateProfile', () => {
     showProfile = new ShowProfileService(fakeUsersRepository);
   });
 
-  it('should be able show the profile', async () => {
+  it('should be able to show the profile', async () => {
     const user = await fakeUsersRepository.create({
       name: 'Jhon Doe',
       email: 'jhondoe@example.com',
